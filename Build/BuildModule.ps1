@@ -96,10 +96,10 @@ Invoke-ModuleBuild -ModuleName 'ImagePlayground' {
         #DeleteTargetModuleBeforeBuild     = $true
 
         ResolveBinaryConflicts            = $true
-        ResolveBinaryConflictsName        = 'ImagePlayground.PowerShell'
-        NETProjectName                    = 'ImagePlayground.PowerShell'
+        ResolveBinaryConflictsName        = 'ImagePlayground.Cmdlets'
+        NETProjectName                    = 'ImagePlayground.Cmdlets'
         NETConfiguration                  = 'Release'
-        NETFramework                      = 'netstandard2.0', 'net472'
+        NETFramework                      = 'net472', 'net8.0'
         #NETExcludeMainLibrary             = $true
         NETExcludeLibraryFilter           = @(
             #'System.Management.*.dll'
